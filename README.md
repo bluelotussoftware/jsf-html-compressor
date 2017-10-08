@@ -1,7 +1,7 @@
 # jsf-html-compressor
 A JSF HTML Compression implementation that is designed to remove white spaces (minify) HTML, CSS, and JS. 
 
-**NOTE:** The compressor does not handle AJAX.
+**NOTE:** The compressor does not handle AJAX (\<partial-response\>). If you want to handle AJAX take a look at [whitespace-filter](https://github.com/bluelotussoftware/whitespace-filter), or fork this code and implement something similar.
 
 ## Requirements
 I used the last version of [htmlcompressor](https://code.google.com/archive/p/htmlcompressor/) to build the project. The latest version 
