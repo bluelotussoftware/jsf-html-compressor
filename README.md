@@ -50,3 +50,18 @@ This filter is an automatic filter based on its annotations, you simply need to 
     <artifactId>jsf-html-compressor</artifactId>
     <version>1.0.0</version>
 </dependency>
+```
+
+Create a **faces-config.xml**, or modify an existing file to contain the following entry.
+```xml
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    <factory>
+        <render-kit-factory>com.bluelotussofware.jsf.faces.render.HtmlCompressorRenderKitFactory</render-kit-factory>
+    </factory>
+</faces-config>
+```
+
